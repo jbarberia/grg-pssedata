@@ -1055,7 +1055,7 @@ class ThreeWindingTransformer(object):
 
 TRANSFORMER_FL_DEFAULTS = [0, 1, 1, 1, 1, 0.0, 0.0, 2, "            ", 1, 1, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, "            "]
 class TransformerParametersFirstLine(object):
-    def __init__(self, i, j, k, ckt, cw, cz, cm, mag1, mag2, nmetr, name, stat, o1, f1, o2, f2, o3, f3, o4, f4, vecgrp="            "):
+    def __init__(self, i, j, k, ckt, cw, cz, cm, mag1, mag2, nmetr, name, stat, o1, f1, o2=0, f2=1.0, o3=0, f3=1.0, o4=0, f4=1.0, vecgrp="            "):
         '''This data structure contains transformer parameters that are common to two and three winding transformers.
 
         Args:

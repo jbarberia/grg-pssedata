@@ -226,7 +226,7 @@ def parse_psse_case_lines(lines):
 
     transformer_index = 0
     while parse_line(lines[line_index])[0][0].strip() not in psse_terminuses:
-        line_parts_1, comment_1 = parse_line(lines[line_index], LineRequirements(line_index, 20, 21, "transformer"))
+        line_parts_1, comment_1 = parse_line(lines[line_index], LineRequirements(line_index, 14, 21, "transformer"))
         parameters_1 = TransformerParametersFirstLine(*line_parts_1)
         #print(parameters_1)
 
